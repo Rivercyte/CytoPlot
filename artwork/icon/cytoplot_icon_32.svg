@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32.000004"
+   height="32.000004"
+   viewBox="0 0 8.4666677 8.4666677"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
+   sodipodi:docname="rivercyte_icon_32.svg"
+   inkscape:export-filename="rivercyte_icon_32.png"
+   inkscape:export-xdpi="96.000008"
+   inkscape:export-ydpi="96.000008"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     units="px"
+     width="64px"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-page="true"
+     inkscape:snap-center="true"
+     inkscape:snap-object-midpoints="false"
+     inkscape:snap-others="false"
+     inkscape:snap-grids="false"
+     inkscape:snap-to-guides="false"
+     inkscape:zoom="14.269629"
+     inkscape:cx="32.691811"
+     inkscape:cy="20.428002"
+     inkscape:window-width="1860"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid7945"
+       originx="-2.2252403e-07"
+       originy="-2.8610231e-07" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:#3857F0;stroke-width:0.582001;stroke-dasharray:4.656, 2.328;stroke-dashoffset:3.8994"
+       id="path604"
+       cx="4.2333331"
+       cy="4.2333331"
+       r="4.2333331" />
+    <path
+       d="m 1.3229165,3.9687428 h 1.5875 V 4.498066 h -1.5875 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       id="path7491" />
+    <path
+       d="m 4.2333331,3.9688284 h 2.9104167 v 0.529152 H 4.2333331 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       id="path7493" />
+    <path
+       d="m 1.8520832,1.8520835 h 3.175 v 0.5291521 h -3.175 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       id="path7495" />
+    <path
+       d="M 1.8520832,6.08543 H 5.0270829 V 6.6145835 H 1.8520832 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       id="path7497" />
+    <path
+       d="M 1.5874998,2.9103579 H 6.0854164 V 3.4395092 H 1.5874998 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       id="path7499" />
+    <path
+       d="M 1.5874998,5.0270837 H 6.0854164 V 5.5562352 H 1.5874998 Z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       id="path7501" />
+  </g>
+</svg>
