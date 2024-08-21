@@ -26,6 +26,10 @@ python3 rename_path.py 's/ShapeOut/CytoPlot/g' ./project
 python3 rename_path.py 's/shapeout2/cytoplot/g' ./project
 python3 rename_path.py 's/shapeout/cytoplot/g' ./project
 
+# Also update the link to the documentation
+find './project' -name '?*.*' -exec sed -i 's|cytoplot.readthedocs.io|rivercyte.com/download/cytoplot-docs|g' {} +
+
+
 # replace icons
 cp artwork/icon/cytoplot_icon_64.png project/cytoplot/img/icon.png
 cp artwork/icon/cytoplot_icon_64.svg project/cytoplot/img/icon.svg
