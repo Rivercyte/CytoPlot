@@ -57,7 +57,7 @@ jobs:
         sed -i '/sec_imprint/d' index.rst
         python -m sphinx -T -b latex -d _build/doctrees -D language=en . _pdf
         cd _pdf
-        latexmk -r latexmkrc -pdf -f -dvi- -ps- -jobname=cytoplot -interaction=nonstopmode
+        latexmk -r latexmkrc -pdf -f -dvi- -ps- -jobname=CytoPlot-Documentation -interaction=nonstopmode
     - name: Release Assets
       uses: softprops/action-gh-release@v1
       with:
