@@ -31,3 +31,4 @@ cp artwork/icon/cytoplot_icon_64.png project/cytoplot/img/icon.png
 cp artwork/icon/cytoplot_icon_64.svg project/cytoplot/img/icon.svg
 cp artwork/icon/cytoplot_icon.ico project/build-recipes/CytoPlot.ico
 cp artwork/splash/cytoplot_splash.png project/cytoplot/img/splash.png
+cp artwork/logo/cytoplot_h50.png project/docs/logo/cytoplot_h50.png
