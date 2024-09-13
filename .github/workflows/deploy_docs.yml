@@ -1,4 +1,4 @@
-name: Deploy to GitHub Releases
+name: Docs to GitHub Releases
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    name: Create Release
+    name: Release Docs
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
