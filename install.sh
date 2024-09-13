@@ -5,7 +5,7 @@ set -x
 # set default release to 1.1.1.1
 RELEASE_VERSION="${RELEASE_VERSION:-1.1.1.1}"
 if [[ "$RELEASE_VERSION" =~ "main" ]]; then
-  $RELEASE_VERSION="1.1.1.1"
+  RELEASE_VERSION="1.1.1.1"
 fi
 
 # override version
