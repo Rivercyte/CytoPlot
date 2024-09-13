@@ -1,0 +1,55 @@
+name: Deploy to GitHub Releases
+
+#on:
+#  push:
+#    tags:
+#      - '*'
+
+jobs:
+  build:
+    name: Create Release
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python-version: ["3.10"]
+        os: [ubuntu-latest]
+    steps:
+    - name: Set env
+      shell: bash
+      run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
+    - uses: actions/checkout@main
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@main
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: install R
+      uses: r-lib/actions/setup-r@v2
+      with:
+        r-version: '4.1.2'
+    - name: Rebranding
+      shell: bash
+      run: bash rebrand.sh
+    - name: Install project
+      shell: bash
+      run: bash install.sh
+    - name: Build Documentation
+      working-directory: ./project/docs
+      shell: bash
+      run: |
+        pip install -r requirements.txt
+        sed -i '/sec_getting_started/d' index.rst
+        sed -i '/sec_changelog/d' index.rst
+        sed -i '/sec_imprint/d' index.rst
+        python -m sphinx -T -b latex -d _build/doctrees -D language=en . _pdf
+        cd _pdf
+        latexmk -r latexmkrc -pdf -f -dvi- -ps- -jobname=CytoPlot-Documentation -interaction=nonstopmode
+#    - name: Release Assets
+#      uses: softprops/action-gh-release@v1
+#      with:
+#        name: CytoPlot ${{ env.RELEASE_VERSION }}
+#        draft: true
+#        prerelease: false
+#        body: |
+#            ![](https://img.shields.io/github/downloads/Rivercyte/CytoPlot/${{ env.RELEASE_VERSION }}/total.svg)
+#        files: |
+#          ./project/docs/_pdf/*.pdf
