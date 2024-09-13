@@ -1,5 +1,8 @@
 name: Deploy to GitHub Releases
 
+on:
+  push:
+  pull_request:
 #on:
 #  push:
 #    tags:
