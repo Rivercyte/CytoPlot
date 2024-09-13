@@ -7,7 +7,6 @@ on:
 
 env:
   PYINSTALLER_COMPILE_BOOTLOADER: 1
-  RPY2_CFFI_MODE: ABI
 
 jobs:
   build:
@@ -51,18 +50,18 @@ jobs:
         dist\\CytoPlot\\CytoPlot.exe --version
         python win_make_iss.py
         ISCC.exe /Q win_cytoplot.iss
-#    - name: Build Documentation
-#      if: runner.os == 'windows'
-#      working-directory: ./project/docs
-#      shell: bash
-#      run: |
-#        pip install -r requirements.txt
-#        sed -i '/sec_getting_started/d' index.rst
-#        sed -i '/sec_changelog/d' index.rst
-#        sed -i '/sec_imprint/d' index.rst
-#        python -m sphinx -T -b latex -d _build/doctrees -D language=en . _pdf
-#        cd _pdf
-#        latexmk -r latexmkrc -pdf -f -dvi- -ps- -jobname=CytoPlot-Documentation -interaction=nonstopmode
+    - name: Build Documentation
+      if: runner.os == 'windows'
+      working-directory: ./project/docs
+      shell: bash
+      run: |
+        pip install -r requirements.txt
+        sed -i '/sec_getting_started/d' index.rst
+        sed -i '/sec_changelog/d' index.rst
+        sed -i '/sec_imprint/d' index.rst
+        python -m sphinx -T -b latex -d _build/doctrees -D language=en . _pdf
+        cd _pdf
+        latexmk -r latexmkrc -pdf -f -dvi- -ps- -jobname=CytoPlot-Documentation -interaction=nonstopmode
     - name: Release Assets
       uses: softprops/action-gh-release@v1
       with:
