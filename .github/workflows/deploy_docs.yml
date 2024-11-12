@@ -43,6 +43,7 @@ jobs:
         sed -i '/sec_getting_started/d' index.rst
         sed -i '/sec_changelog/d' index.rst
         sed -i '/sec_imprint/d' index.rst
+        sed -i '/sec_devs/d' index.rst
         python -m sphinx -T -b latex -d _build/doctrees -D language=en . _pdf
         cd _pdf
         latexmk -r latexmkrc -pdf -f -dvi- -ps- -jobname=CytoPlot-Documentation -interaction=nonstopmode || echo "DONE"
