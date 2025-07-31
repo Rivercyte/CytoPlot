@@ -4,7 +4,7 @@
 Usage
 -----
 
-python rename_path.py 's/Shape-Out2/CytoPlot/g' ./path
+python rename_path.py 's/DCscope/CytoPlot/g' ./path
 """
 import pathlib
 import sys
