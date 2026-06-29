@@ -34,7 +34,10 @@ jobs:
       run: bash rebrand.sh
     - name: Install project
       shell: bash
-      run: bash install.sh
+      run: |
+        bash install.sh
+        # https://github.com/DC-analysis/DCscope/issues/228
+        pip install git+https://github.com/pyqtgraph/pyqtgraph.git@4683d7a2d3f2b0a8412618a41dc780bd9cce339b
     - name: Build windows executable
       if: runner.os == 'windows'
       working-directory: ./project/build-recipes
