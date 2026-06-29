@@ -37,7 +37,7 @@ jobs:
       run: |
         bash install.sh
         # https://github.com/DC-analysis/DCscope/issues/228
-        pip install git+https://github.com/pyqtgraph/pyqtgraph.git@4683d7a2d3f2b0a8412618a41dc780bd9cce339b
+        pip install git+https://github.com/paulmueller/pyqtgraph.git@907c5b0fd65f6b6da684f7a814349e5643ac3fc8
     - name: Build windows executable
       if: runner.os == 'windows'
       working-directory: ./project/build-recipes
