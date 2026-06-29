@@ -37,12 +37,13 @@ jobs:
       run: |
         bash install.sh
         # https://github.com/DC-analysis/DCscope/issues/228
-        pip install git+https://github.com/paulmueller/pyqtgraph.git@907c5b0fd65f6b6da684f7a814349e5643ac3fc8
+        python3 -m pip uninstall -y pyqtgraph
+        python3 -m pip install git+https://github.com/paulmueller/pyqtgraph.git@907c5b0fd65f6b6da684f7a814349e5643ac3fc8
     - name: Build windows executable
       if: runner.os == 'windows'
       working-directory: ./project/build-recipes
       run: |
-        pip install -r win_build_requirements.txt
+        python3 -m pip install -r win_build_requirements.txt
         pyinstaller -y --log-level=WARN win_CytoPlot.spec
         # Run the binary (the most simple test)
         dist\\CytoPlot\\CytoPlot.exe --version
